@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "npm install && npm run build:css",
+    "build:css": "node-sass ./views/styles/main.scss ./views/styles/styles.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -13,5 +15,8 @@
     "mongodb": "^4.17.2",
     "pug": "^3.0.2",
     "slugify": "^1.6.6"
+  },
+  "devDependencies": {
+    "node-sass": "^9.0.0"
   }
 }
